@@ -1,0 +1,253 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body,
+html {
+  width:100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  font-family: @font-sans;
+}
+p {
+  font-family: @font-serif;
+}
+.main-name {
+  font-size: 3vw;
+  color: @black;
+  opacity: .4;
+  .reset;
+  .icon-ag-logo {
+    font-size: 6vw;
+    line-height: 20px;
+  }
+}
+// Animated Titles
+.main-wrapper {
+  width:100%;
+  height: 100%;
+  background: url(/img/Color-0069.jpg) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:1em;
+  border:1em solid @white;
+
+}
+.title-wrapper{
+	position: relative;
+	margin: 230px auto 0 auto;
+}
+.title-static{
+	font-size: 15vw;
+  padding-top:15px;
+}
+.title-words{
+	display: inline;
+}
+.title-words .title-icon-1:before,
+.title-words .title-word:nth-child(1) {
+  color: @blue;
+}
+.title-words .title-icon-2:before,
+.title-words .title-word:nth-child(2) {
+  color: @purple;
+}
+.title-words .title-icon-3:before,
+.title-words .title-word:nth-child(3) {
+  color: @orange;
+}
+.title-words .title-icon-4:before,
+.title-words .title-word:nth-child(4) {
+  color: @red;
+}
+.title-words .title-icon-5:before,
+.title-words .title-word:nth-child(5) {
+  color: @green;
+}
+
+.title-words .title-icon-1:before,
+.title-words .title-word:nth-child(1),
+.title-words .title-icon-2:before,
+.title-words .title-word:nth-child(2),
+.title-words .title-icon-3:before,
+.title-words .title-word:nth-child(3),
+.title-words .title-icon-4:before,
+.title-words .title-word:nth-child(4),
+.title-words .title-icon-5:before,
+.title-words .title-word:nth-child(5){
+  text-shadow: 0px 0px 10px @white;
+}
+
+.title-words .title-icon-1,
+.title-words .title-icon-2,
+.title-words .title-icon-3,
+.title-words .title-icon-4,
+.title-words .title-icon-5 {
+  position: absolute;
+	opacity: 0;
+	color: @black;
+	-webkit-animation: rotateIcon 15s linear infinite 0s;
+	-ms-animation: rotateIcon 15s linear infinite 0s;
+	animation: rotateIcon 15s linear infinite 0s;
+  font-size: 7vw;
+  left:0px;
+  top:4px;
+}
+
+.title-words .title-word {
+	position: absolute;
+	opacity: 0;
+	color: @black;
+	-webkit-animation: rotateTitle 15s linear infinite 0s;
+	-ms-animation: rotateTitle 15s linear infinite 0s;
+	animation: rotateTitle 15s linear infinite 0s;
+  font-size: 6vw;
+  left:0px;
+  top:0;
+  padding-left:29px
+}
+.title-words .title-word:nth-child(2),
+.title-words .title-icon-2 {
+  -webkit-animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	animation-delay: 3s;
+}
+.title-words .title-word:nth-child(3),
+.title-words .title-icon-3 {
+  -webkit-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
+}
+.title-words .title-word:nth-child(4),
+.title-words .title-icon-4 {
+  -webkit-animation-delay: 9s;
+	-ms-animation-delay: 9s;
+	animation-delay: 9s;
+}
+.title-words .title-word:nth-child(5),
+.title-words .title-icon-5 {
+  -webkit-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
+}
+@-webkit-keyframes rotateTitle {
+  0% { opacity: 0; }
+  2% { opacity: 0; -webkit-transform: translateX(-30px); }
+	5% { opacity: 1; -webkit-transform: translateX(0px);}
+  17% { opacity: 1; -webkit-transform: translateX(0px); }
+	20% { opacity: 0; -webkit-transform: translateX(30px); }
+	80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-ms-keyframes rotateTitle {
+  0% { opacity: 0; }
+  2% { opacity: 0; -ms-transform: translateX(-30px); }
+	5% { opacity: 1; -ms-transform: translateX(0px);}
+  17% { opacity: 1; -ms-transform: translateX(0px); }
+	20% { opacity: 0; -ms-transform: translateX(30px); }
+	80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes rotateTitle {
+  0% { opacity: 0; }
+  2% { opacity: 0; -webkit-transform: translateX(-30px); transform: translateX(-30px); }
+  5% { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px);}
+  17% { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px); }
+	20% { opacity: 0; -webkit-transform: translateX(30px); transform: translateX(30px); }
+	80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes rotateIcon {
+  2% {
+    opacity: 0;
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-ms-keyframes rotateIcon {
+  2% {
+    opacity: 0;
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+}
+@keyframes rotateIcon {
+  2% {
+    opacity: 0;
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+// Main About Section
+.main-about {
+  background: @blue;
+  color: @white;
+  padding:20px;
+  border:1em solid @white;
+  border-top:0;
+}
+@media screen and (max-width: 768px){
+  // commented out for use later.
+
+  // .title-words .title-icon-1,
+  // .title-words .title-icon-2,
+  // .title-words .title-icon-3,
+  // .title-words .title-icon-4,
+  // .title-words .title-icon-5 {
+  //   position: absolute;
+  // 	opacity: 0;
+  // 	overflow: hidden;
+  // 	color: #000;
+  // 	-webkit-animation: rotateIcon 15s linear infinite 0s;
+  // 	-ms-animation: rotateIcon 15s linear infinite 0s;
+  // 	animation: rotateIcon 15s linear infinite 0s;
+  //   font-size: 140%;
+  //   left:13px;
+  //   -webkit-animation-fill-mode: both;
+  //   animation-fill-mode: both;
+  //   top:2px;
+  // }
+  //
+  // .title-words .title-word {
+  // 	position: absolute;
+  // 	opacity: 0;
+  // 	overflow: hidden;
+  // 	color: #000;
+  // 	-webkit-animation: rotateTitle 15s linear infinite 0s;
+  // 	-ms-animation: rotateTitle 15s linear infinite 0s;
+  // 	animation: rotateTitle 15s linear infinite 0s;
+  //   font-size: 100%;
+  //   left:0px;
+  //   padding-left:45px
+  // }
+
+}
+@media screen and (max-width: 320px){
+	.title-sentence { font-size: 9px; }
+}
