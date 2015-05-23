@@ -16,3 +16,4 @@ Resumes are kinda lame, I think you'll like this better.
 	* Not quite sure about the fliquid grid or animate.css use in this site. 
 	* Also completed all the grunt tasks. 
 	* Final site will be viewed from ./dist/
+	* Mobile first is the only view completed for now. Tablet and Desktop will follow later.
