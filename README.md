@@ -10,6 +10,16 @@ Resumes are kinda lame, I think you'll like this better.
 
 ## Updates
 
+* 05.29.15
+	* still WIP
+	* modified grunt tasks for javascript concat and minify
+		* not sure why I need to run grunt build in order for watch to update the min file. grr. 	
+	* started subsections
+	* updated icon set
+	* introduced wow.js which triggers animations from scroll points.  Should make the site fun and super trendy. :)
+	
+
+
 * 05.23.15
 	* WIP, first commit to repo.  
 	* Finished up CSS Animations and general strucutures of the page.

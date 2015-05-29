@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['src/**/*.js'],
+        src: ['src/js/wow.js', 'src/js/global.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
@@ -62,11 +62,17 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      js: {
+        files: ["./src/js/*.js"],
+        tasks: ["concat","uglify"],
+      },
+      less: {
         files: "./src/less/*.less",
         tasks: ["less", "cssmin"],
-        options: {
+      },
+      options: {
           livereload: true,
-        }
+      }
     },
 
     cssmin: {
@@ -94,17 +100,18 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'cssmin',
+    'concat',
     'uglify',
-    'jshint',
-    'concat'
+    // 'jshint',
   ]);
 
   // Creates the `server` task
   grunt.registerTask('server', [
     'express',
-    'uglify',
-    'jshint',
     'cssmin',
+    'concat',
+    'uglify',
+    // 'jshint',
     'watch'
   ]);
 

@@ -12,6 +12,7 @@ html {
 
 h1, h2, h3, h4, h5, h5 {
   font-family: @font-sans;
+  text-transform: uppercase;
 }
 p {
   font-family: @font-serif;
@@ -38,6 +39,15 @@ p {
   padding:1em;
   border:1em solid @white;
 
+  .scroll-one{
+    position:absolute;
+    bottom: 30px;
+    left: 48%;
+
+  }
+  .icon-expand-more:before {
+    color: @white;
+  }
 }
 .title-wrapper{
 	position: relative;
@@ -81,7 +91,7 @@ p {
 .title-words .title-word:nth-child(4),
 .title-words .title-icon-5:before,
 .title-words .title-word:nth-child(5){
-  text-shadow: 0px 0px 10px @white;
+  // text-shadow: 0px 0px 10px @white;
 }
 
 .title-words .title-icon-1,
@@ -205,13 +215,22 @@ p {
 }
 
 // Main About Section
-.main-about {
-  background: @blue;
+.main-section {
   color: @white;
   padding:20px;
   border:1em solid @white;
   border-top:0;
 }
+.main-about {
+  background-color: @blue;
+  span {
+    .underlined(@white);
+  }
+}
+.main-history {
+  background-color: @orange;
+}
+
 @media screen and (max-width: 768px){
   // commented out for use later.
 
