@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['src/js/wow.js', 'src/js/global.js'],
+        src: ['src/js/enquire.js', 'src/js/wow.js', 'src/js/global.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },

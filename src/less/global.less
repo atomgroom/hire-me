@@ -11,12 +11,29 @@ html {
 }
 
 h1, h2, h3, h4, h5, h5 {
-  font-family: @font-sans;
+  font-family: @font-sans-headings;
   text-transform: uppercase;
+  font-weight: 800;
 }
-p {
-  font-family: @font-serif;
+p, ul {
+  font-family: @font-sans-body;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  font-weight: 100;
 }
+a {
+  color: @white;
+}
+hr.story-separator {
+    padding: 0;
+    border: none;
+    border-top: medium double @white;
+    color: @white;
+    text-align: center;
+    opacity: .3;
+    margin: 2em 0;
+}
+
 .main-name {
   font-size: 3vw;
   color: @black;
@@ -38,6 +55,8 @@ p {
   background-size: cover;
   padding:1em;
   border:1em solid @white;
+  overflow: hidden;
+  position: relative;
 
   .scroll-one{
     position:absolute;
@@ -51,11 +70,12 @@ p {
 }
 .title-wrapper{
 	position: relative;
-	margin: 230px auto 0 auto;
+	margin: 230px auto 0 10px;
 }
 .title-static{
 	font-size: 15vw;
   padding-top:15px;
+  letter-spacing: 0;
 }
 .title-words{
 	display: inline;
@@ -107,7 +127,7 @@ p {
 	animation: rotateIcon 15s linear infinite 0s;
   font-size: 7vw;
   left:0px;
-  top:4px;
+  top:2px;
 }
 
 .title-words .title-word {
@@ -220,17 +240,113 @@ p {
   padding:20px;
   border:1em solid @white;
   border-top:0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset -6px -6px 0px rgba(68,68,68,0.2);
+  background: url(/img/bg-noise.png);
+
 }
 .main-about {
   background-color: @blue;
+  h2 {
+    width:70%;
+  }
   span {
     .underlined(@white);
   }
 }
 .main-history {
   background-color: @orange;
+  [class^="icon-"] {
+    color:darken(@orange, 30%)
+  }
 }
+.main-personal {
+  background-color: @gold;
+  [class^="icon-"] {
+    color:darken(@gold, 30%)
+  }
 
+}
+.main-history,
+.main-career,
+.main-process,
+.main-personal  {
+  .icon-school,
+  .icon-college,
+  .icon-toddler,
+  .icon-career,
+  .icon-brain,
+  .icon-research,
+  .icon-interview,
+  .icon-personas,
+  .icon-strategy,
+  .icon-architect,
+  .icon-sketch,
+  .icon-wireframe,
+  .icon-prototype,
+  .icon-visual,
+  .icon-document,
+  .icon-code,
+  .icon-camping,
+  .icon-hiking,
+  .icon-reading,
+  .icon-bass,
+  .icon-anna,
+  .icon-ollie,
+  .icon-pippin {
+    opacity: .6;
+    display: block;
+    clear:both;
+    width:100%;
+    text-align: center;
+    margin-bottom:20px;
+  }
+  .icon-toddler,
+  .icon-brain,
+  .icon-interview  {
+    font-size: 5em;
+  }
+  .icon-school,
+  .icon-college,
+  .icon-career,
+  .icon-research,
+  .icon-personas,
+  .icon-strategy,
+  .icon-architect,
+  .icon-sketch,
+  .icon-wireframe,
+  .icon-prototype,
+  .icon-visual,
+  .icon-document,
+  .icon-code,
+  .icon-camping,
+  .icon-hiking,
+  .icon-reading,
+  .icon-bass,
+  .icon-anna,
+  .icon-ollie,
+  .icon-pippin {
+    font-size: 4em;
+  }
+  hr.story-separator {
+      &:after {
+          background: @orange;
+      }
+  }
+}
+.main-career {
+  background-color: @green;
+  [class^="icon-"]  {
+    color:darken(@green, 30%)
+  }
+}
+.main-process {
+  background-color: @purple;
+  [class^="icon-"] {
+    color:darken(@purple, 20%)
+  }
+}
 @media screen and (max-width: 768px){
   // commented out for use later.
 
