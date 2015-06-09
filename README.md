@@ -10,6 +10,14 @@ Resumes are kinda lame, I think you'll like this better.
 
 ## Updates
 
+* 06.01.15
+	* still WIP
+	* added enquire.js to manage wow.js transitions for different breakpoints
+	* added a lot of new unrefined content
+	* added tons of new custom icons
+	* slight redesign of colors
+	* new typefaces
+
 * 05.29.15
 	* still WIP
 	* modified grunt tasks for javascript concat and minify
@@ -26,4 +34,4 @@ Resumes are kinda lame, I think you'll like this better.
 	* Not quite sure about the fliquid grid or animate.css use in this site. 
 	* Also completed all the grunt tasks. 
 	* Final site will be viewed from ./dist/
-	* Mobile first is the only view completed for now. Tablet and Desktop will follow later.
+	* Mobile first is the only view completed for now. Tablet and Desktop will follow later.	
