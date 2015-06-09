@@ -73,9 +73,9 @@ hr.story-separator {
 	margin: 230px auto 0 10px;
 }
 .title-static{
-	font-size: 15vw;
+	font-size: 12vw;
   padding-top:15px;
-  letter-spacing: 0;
+  letter-spacing: 0px;
 }
 .title-words{
 	display: inline;
@@ -111,7 +111,13 @@ hr.story-separator {
 .title-words .title-word:nth-child(4),
 .title-words .title-icon-5:before,
 .title-words .title-word:nth-child(5){
-  // text-shadow: 0px 0px 10px @white;
+  text-shadow:0 0 1px @white,
+  0 0 1px @white,
+  0 0 1px @white,
+  0 0 1px @white,
+  0 0 1px @white,
+  0 0 1px @white;
+
 }
 
 .title-words .title-icon-1,
@@ -125,7 +131,7 @@ hr.story-separator {
 	-webkit-animation: rotateIcon 15s linear infinite 0s;
 	-ms-animation: rotateIcon 15s linear infinite 0s;
 	animation: rotateIcon 15s linear infinite 0s;
-  font-size: 7vw;
+  font-size: 6vw;
   left:0px;
   top:2px;
 }
@@ -140,7 +146,7 @@ hr.story-separator {
   font-size: 6vw;
   left:0px;
   top:0;
-  padding-left:29px
+  padding-left:24px
 }
 .title-words .title-word:nth-child(2),
 .title-words .title-icon-2 {
@@ -258,7 +264,7 @@ hr.story-separator {
 .main-history {
   background-color: @orange;
   [class^="icon-"] {
-    color:darken(@orange, 30%)
+    color:darken(@orange, 30%);
   }
 }
 .main-personal {
@@ -266,7 +272,17 @@ hr.story-separator {
   [class^="icon-"] {
     color:darken(@gold, 30%)
   }
-
+}
+.main-social {
+  background-color: @moss;
+  [class^="icon-"] {
+    color:darken(@moss, 30%);
+    font-size: 2em;
+  }
+  .social-icon {
+    margin-right:1em;
+    color:transparent;
+  }
 }
 .main-history,
 .main-career,

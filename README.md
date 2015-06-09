@@ -10,7 +10,7 @@ Resumes are kinda lame, I think you'll like this better.
 
 ## Updates
 
-* 06.01.15
+* 06.08.15
 	* still WIP
 	* added enquire.js to manage wow.js transitions for different breakpoints
 	* added a lot of new unrefined content
