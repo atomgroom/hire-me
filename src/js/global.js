@@ -44,7 +44,7 @@ enquire.register(queryMD, function() {
       }
     }
   );
-  wow.init();  
+  wow.init();
   var wow = new WOW(
     {
       boxClass:     'scroll-icon',      // animated element css class (default is wow)
