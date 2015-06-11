@@ -64,6 +64,7 @@ hr.story-separator {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
   padding:1em;
   border:1em solid @white;
   overflow: hidden;
@@ -72,20 +73,22 @@ hr.story-separator {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   @media(min-width:@breakpoint-xs){
-    background: url(/img/Color-0069-phone.jpg) no-repeat center center ;
+    background-image: url(/img/Color-0069-phone.jpg);
   }
   @media(min-width:@breakpoint-sm){
     border:2em solid @white;
   }
   @media(min-width:@breakpoint-md){
-    background: url(/img/Color-0069-tablet.jpg) no-repeat center center ;
+    background-image: url(/img/Color-0069-tablet.jpg);
   }
   @media(min-width:@breakpoint-lg){
-    background: url(/img/Color-0069-tablet.jpg) no-repeat center center ;
+    background-image: url(/img/Color-0069-tablet.jpg);
+    background-position: 0 -250px;
+
   }
   @media(min-width:@breakpoint-xl){
-    background: url(/img/Color-0069.jpg) no-repeat center center ;
-    background-position: 0 -650px;
+    background-image: url(/img/Color-0069.jpg);
+    background-position: 0 -450px;
 
   }
   .scroll-one{
@@ -141,7 +144,7 @@ hr.story-separator {
     padding-top:80px;
   }
   @media(min-width:@breakpoint-xl) and (orientation: landscape){
-    padding-top:100px;
+    padding-top:75px;
   }
 }
 .title-words{
@@ -221,7 +224,8 @@ hr.story-separator {
   font-size: 6vw;
   left:15px;
   top:10px;
-  padding-left:40px;
+  padding-left:38px;
+  margin:0;
   @media(min-width:@breakpoint-sm){
     font-size: 4vw;
     padding-left:30px;
@@ -355,6 +359,16 @@ hr.story-separator {
 }
 .main-about {
   background-color: @blue;
+  @media(min-width:@breakpoint-md){
+    h2 {
+      max-width:90%;
+    }
+  }
+  @media(min-width:@breakpoint-lg){
+    h2 {
+      max-width:80%;
+    }
+  }
 }
 .main-history {
   background-color: @orange;
