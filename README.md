@@ -1,8 +1,8 @@
-# Atom Groom - Available for hire.
+# Atom Groom - ~~Available for hire.~~
 
 Hello, my name is Atom Groom.
 
-I am available for hire full-time.
+I ~~am~~ *was* available for hire full-time.
 
 Resumes are kinda lame, I think you'll like this little site better. Scroll on down the page to understand how I can serve you, and see if we're a great fit!
 
