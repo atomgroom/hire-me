@@ -1,12 +1,12 @@
-# Atom Groom - ~~Available for hire.~~
+# Atom Groom - Available for hire.
 
 Hello, my name is Atom Groom.
 
-I ~~am~~ *was* available for hire full-time.
+I am available for hire full-time.
 
-Resumes are kinda lame, I think you'll like this little site better. Scroll on down the page to understand how I can serve you, and see if we're a great fit!
+Resumes are kinda lame, I think you'll like this little site better. Scroll down to understand how I can serve you and to see if we're a great fit!
 
-[hire.atomgroom.com](hire.atomgroom.com) 
+[hire.atomgroom.com](hire.atomgroom.com)
 
 * * *
 
@@ -34,12 +34,12 @@ Resumes are kinda lame, I think you'll like this little site better. Scroll on d
 
 
 
-* * * 
+* * *
 
 ## Updates
 
 * 06.10.15
-	* ready to launch v.1 
+	* ready to launch v.1
 	* responsive images working for the main image
 	* all copy reviewed and edited by my awesome wife
 	* adjusted a bunch of little things visual things
@@ -67,13 +67,13 @@ Resumes are kinda lame, I think you'll like this little site better. Scroll on d
 	* started subsections
 	* updated icon set
 	* introduced wow.js which triggers animations from scroll points.  Should make the site fun and super trendy. :)
-	
+
 
 
 * 05.23.15
 	* WIP, first commit to repo.  
 	* Finished up CSS Animations and general strucutures of the page.
-	* Not quite sure about the fliquid grid or animate.css use in this site. 
-	* Also completed all the grunt tasks. 
+	* Not quite sure about the fliquid grid or animate.css use in this site.
+	* Also completed all the grunt tasks.
 	* Final site will be viewed from ./dist/
-	* Mobile first is the only view completed for now. Tablet and Desktop will follow later.	
+	* Mobile first is the only view completed for now. Tablet and Desktop will follow later.
