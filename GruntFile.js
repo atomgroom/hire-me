@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     express: {
         all: {
             options: {
-                bases: ['/Users/macintosh/GitHub/hire-me/dist'],
+                bases: (__dirname, 'dist'),
                 port: 8080,
                 hostname: "0.0.0.0",
                 livereload: true

@@ -73,21 +73,22 @@ hr.story-separator {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   @media(min-width:@breakpoint-xs){
-    background-image: url(/img/Color-0069-phone.jpg);
+    background-image: url(/img/headshot-cropped.jpg);
+    background-position: -100px 0;
   }
   @media(min-width:@breakpoint-sm){
     border:2em solid @white;
   }
   @media(min-width:@breakpoint-md){
-    background-image: url(/img/Color-0069-tablet.jpg);
+    background-image: url(/img/headshot-cropped.jpg);
   }
   @media(min-width:@breakpoint-lg){
-    background-image: url(/img/Color-0069-tablet.jpg);
+    background-image: url(/img/headshot-cropped.jpg);
     background-position: 0 -250px;
 
   }
   @media(min-width:@breakpoint-xl){
-    background-image: url(/img/Color-0069.jpg);
+    background-image: url(/img/headshot-cropped.jpg);
     background-position: 0 -450px;
 
   }
@@ -106,24 +107,32 @@ hr.story-separator {
 }
 .title-wrapper{
   position: relative;
-  top: 50%;
   left: 20px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color: rgba(255,255,255,0.6);
   padding: 0 20px;
+  @media(min-width:@breakpoint-xs){
+    left: 20px;
+    top: 70%;
+  }
   @media(min-width:@breakpoint-sm){
     left: 20px;
+    top: 70%;
   }
   @media(min-width:@breakpoint-md){
     left: 80px;
+    top: 70%;
   }
   @media(min-width:@breakpoint-lg){
     left: 140px;
+    top: 50%;
   }
   @media(min-width:@breakpoint-xl){
     left: 200px;
+    top: 50%;
+
   }
 }
 .title-static{
